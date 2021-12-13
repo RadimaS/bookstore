@@ -1,0 +1,201 @@
+.footer
+  padding: 108px 0 46px 0
+  background-color: $dark
+  color: $light
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+  &__logo
+    width: 155px
+    height: 177px
+    margin-top: 30px
+    grid-row: 1 / 4
+    &-img
+      width: 100%
+      height: 100%
+  &__categories
+    grid-row: 1 / 4
+    margin-left: 3px
+    margin-bottom: 18px
+  &__additional
+    margin-left: 6px
+  &__legal
+    justify-self: end
+    margin-right: 5px
+  &__social
+    &-links
+      min-width: 83px
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &-network
+      margin-left: 6px
+      margin-top: 1px
+      display: flex
+      align-items: center
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__form
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    &-bottom
+      width: 100%
+      margin-top: 22px
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-between
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &__contact
+    &-ul
+      margin-left: 5px
+    &-details
+      margin-top: 11px
+      margin-left: -3px
+      grid-column: span 2
+    &-form
+      margin-left: 6px
+      grid-column: span 2
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #BDBDBD
+  &__title
+    margin: 0 0 16px 0
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    &-categories
+      margin-bottom: 18px
+    &-contact
+      margin-bottom: 25px
+    &-message
+      margin-bottom: 33px
+    &--inline
+      margin: 0 43px 0 0
+  &__item
+    display: flex
+    align-items: flex-start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    color: #BDBDBD
+    &--mb-2
+      margin-bottom: 20px
+  &__icon
+    &-wrapper
+      min-width: 38px
+  &__text
+    margin-bottom: 19px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 22px
+    color: #BDBDBD
+  &__link
+    text-decoration: none
+    color: inherit
+    &:hover
+      transform: scale(1.2)
+  &__input
+    width: 100%
+    &-group
+      width: 48%
+      height: 65px
+  &__input
+    height: 50px
+    padding: 0 23px
+    background-color: $light
+    border-radius: 4px
+    border: none
+    &::placeholder
+      color: #E0E0E0
+      opacity: 1
+      font-size: 12px
+      line-height: 15px
+  &__message
+    flex-basis: 100%
+    height: 123px
+    padding: 18px 23px
+    background-color: $light
+    border-radius: 4px
+    border: none
+    resize: none
+    &::placeholder
+      color: #E0E0E0
+      opacity: 1
+      font-size: 12px
+      line-height: 15px
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    cursor: pointer
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    &:hover
+      background-color: darken($primary, 10%)
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+  &__bottom
+    padding-top: 80px
+    margin-left: 131px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    grid-row: 5 / 6
+    grid-column: 2 / span 3
+    &-ul
+      display: flex
+    &-item
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 13px
+  &__payment
+    margin-top: -5px
+    width: 136px
+  &__br
+    display: none
