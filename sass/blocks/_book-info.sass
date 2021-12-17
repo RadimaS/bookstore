@@ -1,10 +1,12 @@
 .book
-  padding: 55px 0 // 55
+  padding: 54px 0 55px 0 // 55
   &-wrapper
     display: flex
     // align-items: center
+    max-width: 1140px
+    max-height: 580px
   &-leftblock
-    max-width: 585px
+    // max-width: 585px
     // height: 478px
     margin-right: 67px
     padding-top: 46px
@@ -24,29 +26,10 @@
   .dark-text
     color: $text-color
     margin: 0
-  .author
-    font-family: 'Roboto', sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 20px
-    line-height: 24px
-    letter-spacing: 0.2px
-    color: $text-color
-    text-transform: uppercase
-    margin: 0 0 36px 0
-  .about-book
-    font-family: Open Sans
-    font-style: normal
-    font-weight: 400
-    font-size: 18px
-    line-height: 32px
-    color: #5A7184
-    margin: 0 0 56px 0
-    letter-spacing: 0.05px
+  
   &-buttons
     text-align: center
     border-radius: 8px
-    border: 2px solid $main-blue
     text-transform: uppercase
     &__link
       text-decoration: none
@@ -55,6 +38,7 @@
       font-weight: bold
       color: $main-blue
   &__buy
+    border: 2px solid $main-blue
     background-color: $main-blue 
     font-size: 16px
     line-height: 22px
@@ -64,17 +48,36 @@
     max-width: 210px
     max-height: 58px
   &__read
+    border: 2px solid $main-blue
     font-size: 18px
     line-height: 25px
     color: $main-blue
     background: transparent
-    padding: 17px 48px 16px 51px //по макету 50
+    padding: 15px 46px 16px 46px //по макету 50
     max-width: 234px
     max-height: 58px
     // letter-spacing: -0.4px
   &-rightblock
     background-color: $background
-    min-width: 488px
-    min-height: 580px
+    // min-width: 488px
+    // min-height: 580px
     padding: 103px 119px
-
+.author
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 20px
+  line-height: 24px
+  letter-spacing: 0.2px
+  color: $text-color
+  text-transform: uppercase
+  margin: 0 0 36px 0
+.about-book
+  font-family: Open Sans
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 32px
+  color: #5A7184
+  margin: 0 0 56px 0
+  letter-spacing: -0.5px

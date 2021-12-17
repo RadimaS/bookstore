@@ -1,0 +1,286 @@
+@media ( max-width: 1200px )
+  .container
+    max-width: 960px   
+
+  .book
+
+    &-wrapper
+      max-height: 490px
+      align-items: center
+    &-leftblock
+      padding: 0
+      margin-right: 60px
+    &-name
+      font-size: 40px
+      line-height: 55px
+      margin: 0 0 20px 0
+
+    &__buy
+      font-size: 14px
+      line-height: 22px
+      padding: 15px 27px
+      max-width: 180px
+      max-height: 50px
+    &__read
+      font-size: 16px
+      padding: 11px 35px 15px 35px
+      max-width: 196px
+      max-height: 50px
+  .author
+    margin: 0 0 20px 0
+  .about-book
+    margin: 0 0 35px 0
+    font-size: 17px
+    line-height: 28px
+    letter-spacing: -1px
+  .library
+    &-recommendations
+      max-width: 670px
+    &-books
+      &__name
+        font-size: 20px
+        line-height: 20px
+        margin: 0 0 0 15px
+      &__info
+        padding-top: 15px
+        padding-bottom: 15px
+      &__genre
+        font-size: 16px
+        margin-top: 16px
+        margin-bottom: 19px
+        margin-left: 15px
+      &__price
+        margin-top: 0
+        margin-bottom: 26px
+        margin-left: 15px
+      &__option
+        margin-left: 15px
+      &__button
+        margin-right: 15px
+  .recomm
+    &-books
+      &__item
+        width: 330px
+        max-height: 253px
+      &__morerecomm
+        width: 670px
+        text-align: center
+        padding: 26px 193px
+  .best
+    &-books
+      max-width: 285px
+      padding: 8px
+      padding-bottom: 0
+      &__item
+        max-width: 312px
+        max-height: 180px
+        margin-bottom: 30px
+      &__item:nth-child(4)
+        margin-bottom: 22px
+      &__namesection
+        margin: 27px auto 27px
+      &__name
+        margin-bottom: 15px
+      &__button
+        margin-top: 10px
+        margin-bottom: 15px
+        margin-left: 15px
+        
+@media ( max-width: 992px )
+  .container
+    max-width: 700px
+  .header
+    &-wrapper
+      padding: 32px 0
+  .book
+    padding: 13px 0 56px 0
+    &-wrapper
+      max-height: max-content
+      flex-wrap: wrap
+    &-leftblock
+      margin-right: 0
+      margin-bottom: 45px
+    &-rightblock
+      width: 100%
+      padding: 60px 224px
+    &-name
+      max-width: 700px
+      text-align: center
+      margin: 0 21px 37px 22px
+  .author
+    margin: 0 0 20px 0
+    text-align: center
+  .about-book
+    margin: 0 0 35px 0
+    letter-spacing: normal
+    text-align: center
+  .library
+    &-wrapper
+      flex-wrap: wrap
+    &-recommendations
+      width: 50%
+    &-books
+      &__button
+        margin-right: 10px
+  .recomm
+    &-books
+      &__item:nth-child(3)
+        margin-bottom: 29px
+      &__item:nth-child(4)
+        display: none
+      &__item:nth-child(5)
+        display: none
+      &__item:nth-child(6)
+        display: none
+      &__morerecomm
+        width: 330px
+        padding: 25px
+
+@media ( max-width: 767px )
+  .container
+    max-width: 560px
+  .header
+    &-menu
+      &__item
+        display: none
+    &-right
+      justify-content: flex-end
+  .recomm
+    &-books
+      flex-wrap: wrap
+      justify-content: center
+      &__morerecomm
+        margin-bottom: 56px
+        margin-left: 118px
+  .book
+    &-rightblock
+      padding: 60px 175px
+  .library
+    &-wrapper
+      justify-content: center
+    &-recommendations
+      width: 100%
+      max-height: 100%
+      padding-right: 0
+    &__title
+      text-align: center
+  .best
+    &-books
+      max-width: 330px
+@media ( max-width: 580px )
+  .container
+    max-width: 460px  
+  .header
+    &-right
+      width: max-content
+    &-menu
+      margin-left: 0
+  .book
+    &-rightblock
+      padding: 60px 105px
+    &__read
+      font-size: 16px
+      padding: 12px 15px
+      max-width: 170px
+    &__buy
+      font-size: 14px
+      padding: 12px 15px
+      max-width: 170px
+      max-height: 50px
+    &-name
+      font-size: 35px
+  .author
+    font-size: 18px
+  .about-book
+    font-size: 15px
+  .recomm
+    &-books
+      &__morerecomm
+        margin-left: 65px
+  .best
+    &-books
+      max-width: 330px
+@media ( max-width: 480px )
+  .container
+    max-width: 330px  
+  .header
+    &-menu
+      &__button
+        padding: 5px 10px
+  .book
+    &-name
+      font-size: 32px
+      margin: 0 21px 24px 22px
+    // &__img
+    //   width: 160px
+    //   height: 250px
+    &-rightblock
+      padding: 60px 35px
+    &-buttons
+      display: flex
+      text-align: center
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+      min-width: 176px
+      min-height: 40px
+    &__buy
+      margin-right: 0
+      margin-bottom: 15px
+      font-size: 14px
+  .author
+    font-size: 16px
+    margin: 0 0 32px 0
+  .about-book
+    font-size: 16px
+    margin: 0 0 17px 0
+    letter-spacing: normal
+  .recomm
+    &-books
+      &__morerecomm
+        width: 330px
+        padding: 24px
+        margin-left: 0
+@media ( max-width: 320px )
+  .container
+    max-width: 280px
+  .header
+    max-height: 64px
+    &-wrapper
+      padding: 16px 0
+  .book
+    margin-top: 36px
+    padding-top: 0
+    padding-bottom: 0
+    &-name
+      line-height: 40px
+      margin: 0 0 24px 0
+    &-buttons
+      font-size: 16px
+      line-height: 22px
+    &__buy
+      padding: 7px 18px
+      max-height: 40px
+    &__read
+      padding: 7px 25px
+      max-height: 40px
+    &-leftblock
+      margin-bottom: 36px
+    &-rightblock
+      padding: 55px 68px
+    &__img
+      width: 143px
+      height: 215px
+  .library
+    padding-top: 56px
+    &__title
+      font-size: 28px
+      line-height: 36px
+  .author
+    font-size: 16px
+    line-height: 24px
+    text-align: center
+    margin-bottom: 32px
+  .about-book
+    font-size: 16px
+    line-height: 23px

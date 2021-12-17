@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bookstore - ehya</title>
+    <title>bookstore - Ehya</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
       <div class="container">
         <div class="header-wrapper">
           <div class="header-left__logo">
-            <a class="logo" href="img/Logo.svg">
+            <a class="logo" href="index.html">
               <img src="img/Logo.svg" alt="logo: ehya" />
             </a>
           </div>
@@ -61,14 +61,20 @@
               проектов для крупных клиентов. Теперь я делюсь своими золотыми
               стратегиями ценообразования на творческую работу.
             </p>
-            <button class="book-buttons book__buy">купить сейчас</button>
-            <button class="book-buttons book__read"><a class="book-buttons__link" href="#">читать демо</a> </button>
+            <div class="book-buttons">
+              <button class="book-buttons book__buy book-buttons__link">
+                купить сейчас
+              </button>
+              <button class="book-buttons book__read">
+                <a class="book-buttons__link" href="#">читать демо</a>
+              </button>
+            </div>
             <!-- /.book-buttons -->
           </div>
           <!-- /.book-leftblock -->
           <div class="book-rightblock">
             <div class="book-image">
-              <img src="img/Book image.jpg" alt="image: book" />
+              <img class="book__img" src="img/Book image.jpg" alt="image: book" />
             </div>
             <!-- /.book-image -->
           </div>
@@ -218,7 +224,9 @@
               </div>
             </div>
             <!-- /.recomm-books -->
-            <div class="recomm-books__morerecomm"><a href="#" class="recomm-books__morelink">больше рекомендаций</a></div>
+            <div class="recomm-books__morerecomm">
+              <a href="#" class="recomm-books__morelink">больше рекомендаций</a>
+            </div>
             <!-- /.recomm-books__morerecom -->
           </div>
           <!-- /.library-recommendations -->
@@ -301,7 +309,7 @@
               </div>
               <hr class="best-books__underline" />
               <div class="best-books__namesection">
-                <span >лучшие книги</span>
+                <span>лучшие книги</span>
               </div>
             </div>
             <!-- /.best-books -->
