@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header__mobile--fixed">
       <div class="container">
         <div class="header-wrapper">
           <div class="header-left__logo">
@@ -36,9 +36,16 @@
             <li class="header__menu header-menu__item">
               <a href="#" class="header__menu header-menu__link">Блог</a>
             </li>
-            <button class="header__menu header-menu__button">Получить</button>
+            <button class="header__menu header-menu__button header-menu__item">
+              Получить
+            </button>
           </div>
           <!-- /.header-right -->
+          <button class="menu-button header-wrapper__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
         <!-- /.header-wrapper -->
       </div>
@@ -74,7 +81,11 @@
           <!-- /.book-leftblock -->
           <div class="book-rightblock">
             <div class="book-image">
-              <img class="book__img" src="img/Book image.jpg" alt="image: book" />
+              <img
+                class="book__img"
+                src="img/Book image.jpg"
+                alt="image: book"
+              />
             </div>
             <!-- /.book-image -->
           </div>
@@ -155,79 +166,83 @@
                 </div>
                 <!-- /.library-books__info -->
               </div>
-              <div class="recomm-books__item">
-                <img
-                  src="img/recomm-4.png"
-                  alt="image: book cover"
-                  class="library__cover"
-                />
-                <div class="library-books__info">
-                  <h3 class="library-books__name">
-                    There There :<br />a Novel by TO
-                  </h3>
-                  <p class="library-books__genre">Novel</p>
-                  <h3 class="library-books__price">$20.00</h3>
-                  <div class="library-books__option">
-                    <button class="library-books__button">Купить</button>
-                    <img
-                      src="img/favorite-icon.svg"
-                      alt="icon: heart"
-                      class="library-books__favorite"
-                    />
+              <!-- <div class="recomm-hidden recomm-books "> -->
+                <div class="recomm-books__item recomm-hidden recomm-hidden1">
+                  <img
+                    src="img/recomm-4.png"
+                    alt="image: book cover"
+                    class="library__cover"
+                  />
+                  <div class="library-books__info">
+                    <h3 class="library-books__name">
+                      There There :<br />a Novel by TO
+                    </h3>
+                    <p class="library-books__genre">Novel</p>
+                    <h3 class="library-books__price">$20.00</h3>
+                    <div class="library-books__option">
+                      <button class="library-books__button">Купить</button>
+                      <img
+                        src="img/favorite-icon.svg"
+                        alt="icon: heart"
+                        class="library-books__favorite"
+                      />
+                    </div>
                   </div>
+                  <!-- /.library-books__info -->
                 </div>
-                <!-- /.library-books__info -->
-              </div>
-              <div class="recomm-books__item">
-                <img
-                  src="img/recomm-5.png"
-                  alt="image: book cover"
-                  class="library__cover"
-                />
-                <div class="library-books__info">
-                  <h3 class="library-books__name">
-                    WMNDFL :<br />The Inspiration
-                  </h3>
-                  <p class="library-books__genre">Business</p>
-                  <h3 class="library-books__price">$23.00</h3>
-                  <div class="library-books__option">
-                    <button class="library-books__button">Купить</button>
-                    <img
-                      src="img/favorite-icon.svg"
-                      alt="icon: heart"
-                      class="library-books__favorite"
-                    />
+                <div class="recomm-books__item recomm-hidden recomm-hidden2">
+                  <img
+                    src="img/recomm-5.png"
+                    alt="image: book cover"
+                    class="library__cover"
+                  />
+                  <div class="library-books__info">
+                    <h3 class="library-books__name">
+                      WMNDFL :<br />The Inspiration
+                    </h3>
+                    <p class="library-books__genre">Business</p>
+                    <h3 class="library-books__price">$23.00</h3>
+                    <div class="library-books__option">
+                      <button class="library-books__button">Купить</button>
+                      <img
+                        src="img/favorite-icon.svg"
+                        alt="icon: heart"
+                        class="library-books__favorite"
+                      />
+                    </div>
                   </div>
+                  <!-- /.library-books__info -->
                 </div>
-                <!-- /.library-books__info -->
-              </div>
-              <div class="recomm-books__item">
-                <img
-                  src="img/recomm-6.png"
-                  alt="image: book cover"
-                  class="library__cover"
-                />
-                <div class="library-books__info">
-                  <h3 class="library-books__name">Making<br />Things Happen</h3>
-                  <p class="library-books__genre">Motivation</p>
-                  <h3 class="library-books__price">$23.00</h3>
-                  <div class="library-books__option">
-                    <button class="library-books__button">Купить</button>
-                    <img
-                      src="img/favorite-icon.svg"
-                      alt="icon: heart"
-                      class="library-books__favorite"
-                    />
+                <div class="recomm-books__item recomm-hidden recomm-hidden3">
+                  <img
+                    src="img/recomm-6.png"
+                    alt="image: book cover"
+                    class="library__cover"
+                  />
+                  <div class="library-books__info">
+                    <h3 class="library-books__name">
+                      Making<br />Things Happen
+                    </h3>
+                    <p class="library-books__genre">Motivation</p>
+                    <h3 class="library-books__price">$23.00</h3>
+                    <div class="library-books__option">
+                      <button class="library-books__button">Купить</button>
+                      <img
+                        src="img/favorite-icon.svg"
+                        alt="icon: heart"
+                        class="library-books__favorite"
+                      />
+                    </div>
                   </div>
+                  <!-- /.library-books__info -->
                 </div>
-                <!-- /.library-books__info -->
-              </div>
+              <!-- </div> -->
             </div>
             <!-- /.recomm-books -->
-            <div class="recomm-books__morerecomm">
-              <a href="#" class="recomm-books__morelink">больше рекомендаций</a>
+            <div class="recomm-books__more-recomm">
+              <a class="recomm-books__morelink">больше рекомендаций</a>
             </div>
-            <!-- /.recomm-books__morerecom -->
+            <!-- /.recomm-books__more-recom -->
           </div>
           <!-- /.library-recommendations -->
           <div class="library-best">
@@ -308,8 +323,10 @@
                 </div>
               </div>
               <hr class="best-books__underline" />
-              <div class="best-books__namesection">
-                <span>лучшие книги</span>
+              <div class="best-namesection">
+                <button class="best-books__namesection book-namesection">
+                  лучшие книги
+                </button>
               </div>
             </div>
             <!-- /.best-books -->
@@ -321,5 +338,11 @@
       <!-- /.container -->
     </section>
     <!-- /.library -->
+    <script src="js/jquery-3.6.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

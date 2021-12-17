@@ -1,9 +1,7 @@
 @media ( max-width: 1200px )
   .container
     max-width: 960px   
-
   .book
-
     &-wrapper
       max-height: 490px
       align-items: center
@@ -23,7 +21,7 @@
       max-height: 50px
     &__read
       font-size: 16px
-      padding: 11px 35px 15px 35px
+      padding: 11px 32px 15px 32px
       max-width: 196px
       max-height: 50px
   .author
@@ -62,7 +60,7 @@
       &__item
         width: 330px
         max-height: 253px
-      &__morerecomm
+      &__more-recomm
         width: 670px
         text-align: center
         padding: 26px 193px
@@ -78,7 +76,7 @@
       &__item:nth-child(4)
         margin-bottom: 22px
       &__namesection
-        margin: 27px auto 27px
+        padding: 25px 75px
       &__name
         margin-bottom: 15px
       &__button
@@ -91,7 +89,7 @@
     max-width: 700px
   .header
     &-wrapper
-      padding: 32px 0
+      padding: 20px 0
   .book
     padding: 13px 0 56px 0
     &-wrapper
@@ -123,33 +121,95 @@
       &__button
         margin-right: 10px
   .recomm
+    &-hidden1
+      display: none
+      &--visible
+        display: flex
+    &-hidden2
+      display: none
+      &--visible
+        display: flex
+    &-hidden3
+      display: none
+      &--visible
+        display: flex
     &-books
-      &__item:nth-child(3)
-        margin-bottom: 29px
-      &__item:nth-child(4)
-        display: none
-      &__item:nth-child(5)
-        display: none
-      &__item:nth-child(6)
-        display: none
-      &__morerecomm
+      // &__item
+      //   &--hidden
+      //     display: none
+      //     &--visible
+      //       display: flex
+      &__more-recomm
         width: 330px
         padding: 25px
 
 @media ( max-width: 767px )
   .container
     max-width: 560px
+  body
+    padding-top: 68px
   .header
+    background: white
     &-menu
       &__item
-        display: none
+        margin-top: 30px
+        margin-bottom: 15px
+        margin-left: 0
+      &__button
+        margin-top: 15px
+    &-wrapper
+      padding: 10px 0
+    // &-menu
+    //   &__item
+    //     display: none
     &-right
-      justify-content: flex-end
+      // justify-content: flex-end
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 50px
+      background-color: #eceff5
+      width: 100%
+      &--visible
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      justify-content: space-between
+      border: none
+      background-color: white
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $menu-button
   .recomm
     &-books
       flex-wrap: wrap
       justify-content: center
-      &__morerecomm
+      &__item
+        &--hidden
+          display: none
+          &--visible
+            display: flex
+      &__more-recomm
         margin-bottom: 56px
         margin-left: 118px
   .book
@@ -167,14 +227,33 @@
   .best
     &-books
       max-width: 330px
+      &__namesection
+        padding: 24px 100px
 @media ( max-width: 580px )
   .container
     max-width: 460px  
   .header
     &-right
-      width: max-content
+      // justify-content: flex-end
+      display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 50px
+      background-color: #eceff5
+      width: 100%
+      &--visible
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
     &-menu
-      margin-left: 0
+      &__item
+        margin-bottom: 15px
+        margin-left: 0
+      &__item:nth-child(1)
+        margin-top: 30px
   .book
     &-rightblock
       padding: 60px 105px
@@ -195,11 +274,13 @@
     font-size: 15px
   .recomm
     &-books
-      &__morerecomm
+      &__more-recomm
         margin-left: 65px
   .best
     &-books
-      max-width: 330px
+      // max-width: 330px
+      &__namesection
+        padding: 24px 100px
 @media ( max-width: 480px )
   .container
     max-width: 330px  
@@ -237,10 +318,15 @@
     letter-spacing: normal
   .recomm
     &-books
-      &__morerecomm
+      &__more-recomm
         width: 330px
         padding: 24px
         margin-left: 0
+  .best
+    &-books
+      max-width: 330px
+      &__namesection
+        padding: 24px 100px
 @media ( max-width: 320px )
   .container
     max-width: 280px
