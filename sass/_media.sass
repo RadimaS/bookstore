@@ -1,3 +1,17 @@
+@media ( max-width: 1440px )
+  .book
+    &__buy
+      max-width: 256px
+      padding: 17px 35px
+      margin-right: 21px
+    &__read
+      padding: 18px 47px 16px 46px
+      max-width: 330px
+  .best
+    &-books
+      padding: 27px 26px 0
+      &__namesection
+        padding: 25px 98px
 @media ( max-width: 1200px )
   .container
     max-width: 960px   
@@ -71,7 +85,7 @@
       &__item
         max-width: 312px
         max-height: 180px
-        margin-bottom: 30px
+        margin-bottom: 31px
       &__item:nth-child(4)
         margin-bottom: 22px
       &__namesection
@@ -124,6 +138,9 @@
       width: 330px
       padding: 25px      
   .recomm
+    &-books
+      &__item
+        margin-bottom: 30px
     &-hidden4
       display: none
       &--visible
@@ -443,20 +460,26 @@
       &__item
         max-height: max-content
         margin-bottom: 24px
-    &-hidden2
+    &-hidden2, &-hidden3, &-hidden4, &-hidden5, &-hidden6
       display: none
       &--visible
         display: flex
-    &-hidden3
-      display: none
-      &--visible
-        display: flex
+        flex-direction: column
+        align-items: center
+    // &-hidden3
+    //   display: none
+    //   &--visible
+    //     display: flex
     &-hidden1
       display: flex
       flex-direction: column
       align-items: center
-  .hidden1
+  .hidden1 //, .hidden2, .hidden3, .hidden4, .hidden5, .hidden6
     &-cover
       width: 96px
       height: 140px
       margin-top: -40px
+  .hidden2, .hidden3, .hidden4, .hidden5, .hidden6
+    &-cover
+      width: 96px
+      height: 140px
