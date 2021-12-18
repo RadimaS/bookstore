@@ -28,23 +28,35 @@ $(document).ready(function () {
       .querySelector(".header-right")
       .classList.toggle("header-right--visible");
   });
-  var moreButton = document.querySelector(".recomm-books__morelink");
-  moreButton.addEventListener("click", function () {
-    document
-      .querySelector(".recomm-hidden1")
-      .classList.toggle("recomm-hidden1--visible");
-  });
-  var moreButton2 = document.querySelector(".recomm-books__morelink");
+  var moreButton2 = document.querySelector(".library__morelink");
   moreButton2.addEventListener("click", function () {
     document
       .querySelector(".recomm-hidden2")
       .classList.toggle("recomm-hidden2--visible");
   });
-  var moreButton3 = document.querySelector(".recomm-books__morelink");
+  var moreButton3 = document.querySelector(".library__morelink");
   moreButton3.addEventListener("click", function () {
     document
       .querySelector(".recomm-hidden3")
       .classList.toggle("recomm-hidden3--visible");
+  });
+  var moreButton4 = document.querySelector(".library__morelink");
+  moreButton4.addEventListener("click", function () {
+    document
+      .querySelector(".recomm-hidden4")
+      .classList.toggle("recomm-hidden4--visible");
+  });
+  var moreButton5 = document.querySelector(".library__morelink");
+  moreButton5.addEventListener("click", function () {
+    document
+      .querySelector(".recomm-hidden5")
+      .classList.toggle("recomm-hidden5--visible");
+  });
+  var moreButton6 = document.querySelector(".library__morelink");
+  moreButton6.addEventListener("click", function () {
+    document
+      .querySelector(".recomm-hidden6")
+      .classList.toggle("recomm-hidden6--visible");
   });
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
