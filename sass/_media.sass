@@ -96,7 +96,31 @@
         margin-top: 10px
         margin-bottom: 15px
         margin-left: 15px
-        
+  .category
+    &__item
+      padding: 30px 5px 5px
+      width: 230px
+      height: 220px
+    &__name
+      margin-top: 30px
+      margin-bottom: 10px
+      font-size: 20px
+      line-height: 18px
+    &__genre
+      font-size: 14px
+      line-height: 20px
+    &__underline
+      width: 960px
+    &-slider
+      &__button
+        &--next
+          right: -808px
+  .unreleased 
+    &-blocks
+      &__bottom
+        justify-content: space-between
+    &-image:nth-child(5)
+      display: none 
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -160,7 +184,23 @@
       //     &--visible
       //       display: flex
 
-
+  .category
+    &__item:nth-child(4)
+      display: none
+    &__underline
+      width: 700px
+    &-slider
+      &__button
+        &--next
+          right: -548px
+  .unreleased 
+    &-blocks
+      &__bottom
+        justify-content: space-between
+    &-image:nth-child(4)
+      display: none 
+    &-image:nth-child(5)
+      display: none 
 @media ( max-width: 767px )
   .container
     max-width: 560px
@@ -247,6 +287,33 @@
       max-width: 330px
       &__namesection
         padding: 24px 100px
+  .category
+    &-blocks
+      justify-content: center
+    &__item:nth-child(2)
+      display: none
+    &__item:nth-child(3)
+      display: none
+    &__item:nth-child(4)
+      display: none
+    &__underline
+      width: 560px
+    &-slider
+      &__button
+        &--prev
+          left: 115px
+        &--next
+          right: -238px
+  .unreleased 
+    &-blocks
+      &__bottom
+        justify-content: space-between
+    &-image:nth-child(3)
+      display: none 
+    &-image:nth-child(4)
+      display: none 
+    &-image:nth-child(5)
+      display: none 
 @media ( max-width: 580px )
   .container
     max-width: 460px  
@@ -296,7 +363,19 @@
         padding: 24px 100px
   .library
     &__more
-      margin-left: 65px    
+      margin-left: 65px   
+  .category
+    &__underline
+      width: 460px
+    &-slider
+      &__button
+        &--prev
+          left: 70px
+        &--next
+          right: -188px 
+  .unreleased
+    &__title
+      font-size: 30px
 @media ( max-width: 480px )
   .container
     max-width: 330px  
@@ -341,9 +420,73 @@
       max-width: 330px
       &__namesection
         padding: 24px 100px
+  .category
+    &-blocks
+      flex-wrap: wrap
+      width: 330px
+    &__item
+      width: 140px
+      height: 182px
+      padding: 20px 14px
+      margin-bottom: 10px
+    &__icon
+      width: 36px
+      height: 36px
+    &__name
+      font-family: 'Roboto Condensed'
+      font-size: 16px
+      line-height: 20px
+      margin-top: 13px
+    &__genre
+      font-family: 'Open Sans'
+      font-size: 12px
+      line-height: 20px
+    &__arrows
+      width: 75px
+      height: 75px
+    &__item1
+      margin-right: 10px
+    &__item:nth-child(2)
+      display: flex
+    &__name2
+      margin-bottom: 30px
+    &__item:nth-child(3)
+      display: flex
+    &__item3
+      margin-right: 10px
+    &__item:nth-child(4)
+      display: flex
+    &__underline
+      width: 280px
+      margin-top: 56px
+      margin-bottom: 55px
+    &-slider
+      &__button
+        &--prev
+          top: 17px
+          left: 91px
+        &--next
+          top: 17px
+          right: -64px 
+  .unreleased
+    margin-top: 59px
+    min-height: 665px 
+    &-slider
+      &__button
+        &--prev, &--next
+          position: relative
+          top: 420px
+    &-blocks
+      &__bottom
+        justify-content: center
+    &-image:nth-child(2)
+      display: none
+  .same
+    flex-direction: column
+    margin-bottom: 0
 @media ( max-width: 320px )
   .container
-    max-width: 280px
+    max-width: 290px
   .header
     max-height: 64px
     &-wrapper
@@ -454,7 +597,6 @@
     &__cover
       width: 96px
       height: 145px
-    
   .recomm
     &-books
       &__item
@@ -483,3 +625,58 @@
     &-cover
       width: 96px
       height: 140px
+  .category
+    &-blocks
+      flex-wrap: wrap
+      width: 290px
+    &__item
+      width: 140px
+      height: 182px
+      padding: 20px 14px
+      margin-bottom: 10px
+    &__icon
+      width: 36px
+      height: 36px
+    &__name
+      font-family: 'Roboto Condensed'
+      font-size: 16px
+      line-height: 20px
+      margin-top: 13px
+    &__genre
+      font-family: 'Open Sans'
+      font-size: 12px
+      line-height: 20px
+    &__arrows
+      width: 75px
+      height: 75px
+    &__item1
+      margin-right: 10px
+    &__item:nth-child(2)
+      display: flex
+    &__name2
+      margin-bottom: 30px
+    &__item:nth-child(3)
+      display: flex
+    &__item3
+      margin-right: 10px
+    &__item:nth-child(4)
+      display: flex
+    &__underline
+      width: 280px
+      margin-top: 56px
+      margin-bottom: 55px
+    &-slider
+      &__button
+        &--prev
+          top: 17px
+          left: 74px
+        &--next
+          top: 17px
+          right: -40px 
+  .unreleased
+    margin-top: 50px
+    &__title
+      font-size: 28px
+      line-height: 36px
+  .same
+    margin-top: 50px

@@ -1,17 +1,17 @@
 $(document).ready(function () {
-  //   const hotelSlider = new Swiper('.hotel-slider', {
-  //     // Optional parameters
-  //     keyboard: {
-  //       enabled: true,
-  //       onlyInViewport: false,
-  //     },
-  //     loop: true,
-  //     // Navigation arrows
-  //     navigation: {
-  //       nextEl: '.hotel-slider__button--next',
-  //       prevEl: '.hotel-slider__button--prev',
-  //     },
-  //   });
+  // const hotelSlider = new Swiper(".category-slider", {
+  //   // Optional parameters
+  //   keyboard: {
+  //     enabled: true,
+  //     onlyInViewport: false,
+  //   },
+  //   loop: true,
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: ".category-slider__button--next",
+  //     prevEl: ".category-slider__button--prev",
+  //   },
+  // });
 
   //   const reviewsSlider = new Swiper('.reviews-slider', {
   //     loop: true,

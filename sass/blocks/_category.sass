@@ -38,20 +38,17 @@
     line-height: 22px
     text-align: center
     color: #5A7184
-  &-slider
-    max-width: 900px
-    max-height: 450px
+  &-slider  
     &__button
-      top: 100%
-      transform: translateY(-50%)
-      z-index: 99
-      width: 100px
-      height: 100px
-      border: none
-      cursor: pointer
-      background-repeat: no-repeat
-      background-position: center
-      background-size: 10px
       &--prev
-        left: 18px
-        background-image: url(../img/left-arrow.svg)
+        position: relative
+        background: transparent
+        border: none
+        top: -155px
+        left: -50px
+      &--next
+        position: relative
+        background: transparent
+        border: none
+        top: -155px
+        right: -985px
