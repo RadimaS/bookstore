@@ -1,7 +1,7 @@
 @media ( max-width: 1440px )
   .about
-    &-book
-      letter-spacing: normal
+    // &-book
+    //   letter-spacing: normal
     &-main
       &__button
         &--play
@@ -24,7 +24,7 @@
       padding: 17px 35px
       margin-right: 21px
     &__read
-      padding: 18px 47px 16px 50px
+      padding: 18px 42px 16px 50px
       max-width: 330px
   .best
     &-books
@@ -172,6 +172,11 @@
       margin-left: 15px
     &__info
       width: 195px
+  .cta
+    &__title
+      font-size: 30px
+  .stock
+    width: 400px
 @media ( max-width: 992px )
   .container
     max-width: 700px
@@ -307,6 +312,11 @@
       justify-content: center
   .mainblock
     width: 515px
+  .cta
+    &-block
+      flex-direction: column
+      justify-content: center
+      padding: 18px 60px
 @media ( max-width: 767px )
   .container
     max-width: 560px
@@ -643,6 +653,8 @@
       height: 5px
     &__list1
       margin-bottom: 30px
+  .stock
+    width: 335px
 @media ( max-width: 480px )
   .container
     max-width: 330px  
@@ -876,6 +888,11 @@
       height: 170px
     &__info
       width: 330px
+  .cta
+    &-block
+      margin-top: 545px
+    &__title
+      font-size: 28px
 @media ( max-width: 320px )
   .container
     max-width: 290px
@@ -946,9 +963,9 @@
       padding: 7px 30px
       margin-right: 20px
     &__more
-      width: 280px
+      width: 287px
       height: 48px
-      padding: 14px 60px
+      padding: 11px 60px
     &__morelink
       text-transform: none
   .author
@@ -999,6 +1016,7 @@
   .recomm
     &-books
       &__item
+        width: 280px
         max-height: max-content
         margin-bottom: 24px
     &-hidden2, &-hidden3, &-hidden4, &-hidden5, &-hidden6
@@ -1062,7 +1080,7 @@
       display: flex
     &__underline
       width: 280px
-      margin-top: 56px
+      margin-top: 53px
       margin-bottom: 55px
     &-slider
       &__button
@@ -1273,3 +1291,31 @@
     &__link
       font-size: 10px
       line-height: 20px
+    &__link1
+      position: relative
+      top: -3px
+    &__date2
+      position: relative
+      top: -3px
+    &__title2
+      position: relative
+      top: -3px
+      width: 180px
+    &__link2
+      position: relative
+      top: -8px
+    &__img2
+      position: relative
+      top: -1px
+    &__date3
+      position: relative
+      top: -7px
+    &__title3
+      position: relative
+      top: -7px
+    &__link3
+      position: relative
+      top: -13px
+    &__img3
+      position: relative
+      top: -9px
